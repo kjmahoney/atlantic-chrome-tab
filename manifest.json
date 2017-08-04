@@ -4,7 +4,8 @@
 "version": "1.0.0",
 "manifest_version": 2,
 "icons": {
-  "128": "atl-icon.png"
+  "128": "atl-icon.png",
+  "logo": "atl-logo.eps"
 },
 "chrome_url_overrides" : {
   "newtab": "index.html"
