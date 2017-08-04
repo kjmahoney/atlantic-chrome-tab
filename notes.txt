@@ -1,0 +1,2 @@
+Todo:
+1. Icon in manifest.json, icon must be 128x128

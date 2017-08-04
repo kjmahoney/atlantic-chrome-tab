@@ -1,0 +1,12 @@
+{
+"name": "The Atlantic New Tab",
+"description": "The Atlantic Chrome Extension",
+"version": "1.0.0",
+"manifest_version": 2,
+"icons": {
+  "128": "atl-icon.png"
+},
+"chrome_url_overrides" : {
+  "newtab": "index.html"
+}
+}
