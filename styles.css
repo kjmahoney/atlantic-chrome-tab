@@ -6,11 +6,15 @@
 .c-tab__section {
   display: flex;
   flex-direction: row;
+  margin-top: 32px;
+
 }
 
 .c-tab__section--hed {
   align-items: center;
   justify-content: center;
+  margin-bottom: 16px;
+  margin-top: 0;
 }
 
 .c-tab__half {
@@ -31,11 +35,31 @@
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
+  margin-bottom: 0;
 }
 
 .c-tab__content {
   width: 100%;
   height: 50%;
+}
+
+.c-tab__title {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c-tab__dek {
+  font-size: 20px;
+}
+
+.c-tab__title--primary {
+  font-size: 56px;
+  font-weight: 900;
+}
+
+.c-tab__dek--primary {
+  font-size: 24px;
 }
 
 .c-tab__hed {
