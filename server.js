@@ -1,3 +1,4 @@
+require('dotenv').config()
 var sitePath = process.argv[2] || ".";
 var port = process.env.PORT || 5000;
 var request = require('request');
@@ -11,7 +12,12 @@ app.use((req, res, next) => {
 });
 
 app.get('/api', (req, res) => {
-  request('http://localhost:9001/api/2.0/articles/', (error, response, body) => {
+  request({
+    url: 'http://www.theatlantic.com/api/2.0/articles/',
+    headers: {
+      'Authorization': 'token ' + process.env.ATLANTIC_API_TOKEN
+    }
+  }, (error, response, body) => {
     body = JSON.parse(body)
     res.json(body);
   })

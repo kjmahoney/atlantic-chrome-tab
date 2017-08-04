@@ -1,9 +1,10 @@
 body {
-  display: flex;
   align-items: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-p {
-  color: green;
+.c-tab__container {
+
 }
