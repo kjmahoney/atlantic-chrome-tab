@@ -18,8 +18,9 @@ app.get('/api', (req, res) => {
       'Authorization': 'token ' + process.env.ATLANTIC_API_TOKEN
     }
   }, (error, response, body) => {
-    body = JSON.parse(body)
-    res.json(body);
+    data = JSON.parse(body).results;
+    data = data.slice(0,3)
+    res.json(data);
   })
 });
 
